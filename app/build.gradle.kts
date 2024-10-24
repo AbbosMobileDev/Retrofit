@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -52,5 +53,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1") // Replace with the latest version
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
 
 }

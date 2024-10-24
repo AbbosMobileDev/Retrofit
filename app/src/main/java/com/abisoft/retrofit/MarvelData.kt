@@ -1,7 +1,9 @@
 package com.abisoft.retrofit
 
 import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class MarvelData(
     @SerializedName("task_id") val taskId: Int,
     @SerializedName("index") val index: Int,
