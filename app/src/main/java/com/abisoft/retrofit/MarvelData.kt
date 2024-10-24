@@ -20,4 +20,4 @@ data class MarvelData(
     @SerializedName("name") val name: String,
     @SerializedName("priority") val priority: String,
     @SerializedName("status") val status: String
-)
+) //
