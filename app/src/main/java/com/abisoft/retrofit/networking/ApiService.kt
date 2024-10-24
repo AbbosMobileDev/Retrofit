@@ -8,3 +8,4 @@ interface ApiService {
     @GET("api/v1/task/get_all_tasks/")
     fun getMarvels(): Call<List<MarvelData>>
 }
+//
